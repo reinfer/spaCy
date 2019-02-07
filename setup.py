@@ -195,14 +195,20 @@ def setup_package():
                 'numpy>=1.15.0',
                 'murmurhash>=0.28.0,<1.1.0',
                 'cymem>=2.0.2,<2.1.0',
+                'cytoolz>=0.9.0.1',
                 'preshed>=2.0.1,<2.1.0',
-                'thinc>=6.12.1,<6.13.0',
                 'plac<1.0.0,>=0.9.6',
                 'ujson>=1.35',
                 'dill>=0.2,<0.3',
-                'regex==2018.01.10',
+                'regex>=2018.01.10',
                 'requests>=2.13.0,<3.0.0',
+                'thinc>=7.0.0.dev6',
+                'msgpack>=0.6.1',
+                'msgpack-numpy>=0.4.1',
                 'pathlib==1.0.1; python_version < "3.4"'],
+            dependency_links = [
+                "https://github.com/explosion/thinc/archive/v7.0.0.dev6.tar.gz#egg=thinc-7.0.0.dev6"
+            ],
             extras_require={
                 'cuda': ['cupy>=4.0'],
                 'cuda80': ['cupy-cuda80>=4.0', 'thinc_gpu_ops>=0.0.3,<0.1.0'],

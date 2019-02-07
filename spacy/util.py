@@ -24,8 +24,10 @@ from .errors import Errors
 
 # Import these directly from Thinc, so that we're sure we always have the
 # same version.
-from thinc.neural._classes.model import msgpack
-from thinc.neural._classes.model import msgpack_numpy
+# from thinc.neural._classes.model import msgpack
+# from thinc.neural._classes.model import msgpack_numpy
+import msgpack
+import msgpack_numpy
 
 
 LANGUAGES = {}
